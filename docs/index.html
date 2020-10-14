@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+		<title>MercadoTECH - Tu e-shop.js</title>
+		<link rel="stylesheet" href="https://startbootstrap.github.io/startbootstrap-shop-item/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://startbootstrap.github.io/startbootstrap-shop-item/css/shop-item.css">
+	</head>
+
+	<body>
+		<header class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+			<div class="container">
+				<a class="navbar-brand font-weight-bold" href="#">&#x1F5A5; MercadoTECH</a>
+				<button id="btn-crear-producto" type="button" class="btn btn-primary btn-sm mr-1" data-toggle="modal" data-target="#agregarProducto">Agregar producto</button>			
+				<button class="btn btn-primary btn-sm mr-1" id="catalogo">Catalogo Completo</button>
+				<button class="btn btn-primary btn-sm mr-1" id="filtrar-menores-500">Productos menores a 500</button>
+				<button class="btn btn-primary btn-sm mr-1" id="filtrar-menores-1000">Productos entre 500 y 1000</button>
+				<button class="btn btn-primary btn-sm mr-1" id="filtrar-menores-1500">Productos entre 1000 y 1500</button>
+				<button class="btn btn-primary btn-sm mr-1" id="filtrar-menores-2000">Productos entre 1500 y 2000</button>
+
+			</div>
+		</header>
+		<main class="container">
+			<h2 class="w-100 my-3 p-3 border">&#x2B50; Productos Destacados</h2>
+
+						
+			<!-- AREA PRODUCTOS DESTACADOS -->
+			<section id="productos-destacados" class="row py-3">
+				<article class="col-4 d-none">
+					<div class="card h-100">
+						<a href="#">
+							<img class="card-img-top img-fluid" src="http://placeimg.com/480/320/tech" alt="">
+						</a>
+						<div class="card-body">
+							<h4 class="card-title"><a href="#">Producto X</a> <span class="badge badge-pill badge-success float-right">$999.99</span></h4>
+							<p class="card-text">9999 unid.</p>
+							<button class="btn btn-primary float-right">Comprar</button>
+						</div>
+					</div>	
+				</article>
+			</section>
+
+
+		 <!-- MODAL - AGREGAR PRODUCTO waerwear-->
+		 <div class="modal fade" id="agregarProducto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		 <div class="modal-dialog" role="document">
+			 <div class="modal-content">
+				 <div class="modal-header">
+					 <h5 class="modal-title" id="exampleModalLabel">
+						 Agregar Producto
+					 </h5>
+					 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						 <span aria-hidden="true">&times;</span>
+					 </button>
+				 </div>
+				 <div class="modal-body">
+					 <!-- Agregar Formulario Aqui -->
+					 <form action="POST" id="agregar-producto">
+						 <div class="form-group">
+							 <label for="nombre">Nombre</label>
+							 <input class="form-control" type="text" name="nombre" id="nombre-agregar" />
+						 </div>
+						 <div class="form-group">
+							 <label for="marca">Marca</label>
+							 <input class="form-control" type="text" name="marca" id="marca-agregar" />
+						 </div>
+						 <div class="form-group">
+							 <label for="stock">Stock</label>
+							 <input class="form-control" type="number" name="stock" id="stock-agregar" />
+						 </div>
+						 <div class="form-group">
+							 <label for="precio">Precio</label>
+							 <input class="form-control" type="number" name="precio" id="precio-agregar" />
+						 </div>
+						 <div class="form-group">
+							 <label for="imagen">Imagen</label>
+							 <input class="form-control p-1" type="text" name="imagen" id="imagen-agregar" placeholder="Ingresar URL de la imagen..." />
+						 </div>
+						 <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							<button type="submit" id="btn-mandar-nuevo-producto" class="btn btn-success" data-dismiss="modal">Agregar producto </button>
+					   </div>
+					 </form>
+				 </div>
+				
+			</div>
+		</div>
+	</div>
+
+		</main>
+		<footer class="py-5 bg-dark">
+			<div class="container">
+				<p class="m-0 text-center text-white">¡La mejor manera de comprar online!</p>
+			</div>
+		</footer>
+		<script src="https://startbootstrap.github.io/startbootstrap-shop-item/vendor/jquery/jquery.min.js"></script>
+		<script src="https://startbootstrap.github.io/startbootstrap-shop-item/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<script src="mercadotech.js"></script>
+	</body>
+</html>
