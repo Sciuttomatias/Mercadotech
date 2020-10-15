@@ -6,8 +6,8 @@ const urlencoded = express.urlencoded({ extended: true })  // Middleware que con
 const json = express.json() // Middleware que convierte de JSON a Object
 
 const baseDeProductos = easyDB({
-    database: '092b3a88-36b3-47f3-8574-3a4bde285bd3',
-    token: '44209ee9-e797-417e-b25e-c66ed0fd772e'
+    database: 'f03d39f4-98c4-4bea-88ef-14418819c8b0',
+    token: '2c30371b-d411-47b8-84d3-6a2601fdef6f'
   })
   
 
