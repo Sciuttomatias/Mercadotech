@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Sciuttomatias/Mercadotech/issues"
   },
-  "homepage": "https://github.com/Sciuttomatias/Mercadotech#readme"
+  "homepage": "https://github.com/Sciuttomatias/Mercadotech#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
