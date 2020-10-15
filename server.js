@@ -1,7 +1,7 @@
 const express = require("express")
 const server = express()
 const easyDB = require("easydb-io")
-const docs = express.static("docs")
+const docs = express.static("__dirname" + "/docs")
 const urlencoded = express.urlencoded({ extended: true })  // Middleware que convierte de FormData a Object
 const json = express.json() // Middleware que convierte de JSON a Object
 
