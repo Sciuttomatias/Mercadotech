@@ -1,7 +1,6 @@
 const express = require("express")
 const server = express()
 const easyDB = require("easydb-io")
-const { response } = require("express")
 const docs = express.static("docs")
 const urlencoded = express.urlencoded({ extended: true })  // Middleware que convierte de FormData a Object
 const json = express.json() // Middleware que convierte de JSON a Object
@@ -25,6 +24,7 @@ server.post("/agregar", async (req, res) => {
     res.end("Mira la consola..")
 
 })
+
 server.get("/mostrar", async (req, res) => {
    
     const productos = await baseDeProductos.list()
